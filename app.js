@@ -4,6 +4,7 @@ let userSeq = [];
 let btns = ["yellow","red","purple","green"];
 
 let h2 = document.querySelector("h2");
+let btn = document.querySelector("button");
 
 let started = false;
 let level = 0;
@@ -32,7 +33,7 @@ function userFlash(btn) {
     },250);
 }
 
-document.addEventListener("keypress" , function() {
+btn.addEventListener("click" , function() {
     if( started == false ) {
         started = true;
 
@@ -59,6 +60,7 @@ function wrongClick() {
     setTimeout( function() {
         bodyCol.classList.remove("body");
     }, 200);
+
 }
 
 function checkSeq(idx) {
@@ -67,7 +69,7 @@ function checkSeq(idx) {
             setTimeout(levelUp, 1000);
         }
     } else {
-        h2.innerHTML = `Game Over! <b>Your score was ${level}</b><br>Press any key to start `;
+        h2.innerHTML = `Game Over! <b>Your score was ${level}</b><br>click start button to start `;
         highestScore();
         wrongClick();
         reset();

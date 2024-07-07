@@ -42,3 +42,15 @@ body {
 .body {
     background-color: red;
 }
+
+button {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    background-color: chartreuse;
+}
+
+.invisible {
+    display: none;
+}
