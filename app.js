@@ -19,11 +19,11 @@ function gameFlash(btn) {
 }
 
 function highestScore() {
-    let Hscore = document.querySelector("h4");
+    let Hscore = document.querySelector("h3");
     if(highest < level) {
         highest = level;
     }
-    Hscore.innerHTML = `Highest Score = ${highest}`;
+    Hscore.innerText = `Highest Score = ${highest}`;
 }
 
 function userFlash(btn) {

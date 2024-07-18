@@ -73,10 +73,14 @@ button {
 
 /* intruction.html */
 
-.body {
-    align-items: center;
-}
-
 h4 {
     line-height: 8px;
+}
+
+.how_to_play {
+    font-size: larger;
+}
+
+.footer p {
+    font-size: large;
 }
